@@ -59,7 +59,7 @@ module.exports = {
       }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/index.html',
+      template: './src/main.html',
       filename: 'index.html'
     }),
     new WebpackMd5Hash(),

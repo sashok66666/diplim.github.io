@@ -1,0 +1,7 @@
+@import url(../__input/header__input.css);
+@import url(../__button/header__button.css);
+.header__form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: stretch;
+}

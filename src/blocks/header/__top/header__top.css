@@ -1,0 +1,10 @@
+@import url(../../logo/logo.css);
+@import url(../__menu/header__menu.css);
+.header__top {
+    padding: 0 100px 0 100px;
+    border-bottom: 1px solid rgba(110, 110, 110, 0.7);
+    margin: auto;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

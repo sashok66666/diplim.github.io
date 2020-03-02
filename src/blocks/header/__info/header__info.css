@@ -1,0 +1,9 @@
+@import url(../__title/header__title.css);
+@import url(../__description/header__description.css);
+@import url(../__form/header__form.css);
+.header__info {
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+    padding: 80px 0 80px 0;
+}

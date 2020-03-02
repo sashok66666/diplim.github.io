@@ -1,0 +1,8 @@
+@import url(./__facebook/link__facebook.css);
+@import url(./__github/link__github.css);
+.link {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}

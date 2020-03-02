@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Дипломная работа"> 
+  <meta name="author" content="Александр Караваев">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__top">
+        <div class="logo">
+          <a class="logo__link" href="#">NewAnalyzer</a>
+        </div>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item menu__item_active">
+              <a href="#" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__info">
+        <h1 class="header__title">Что в мире творится?</h1>
+        <p class="header__description">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
+        <form action="" class="header__form">
+          <input type="text" class="header__input" placeholder="Введите тему новости">
+          <button type="button" class="header__button">Искать</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="card-list">
+        <i class="circle-preloader"></i>
+      </section>
+      <section class="about-author">
+        <div class="about-author__img"></div>
+        <div class="about-author__text">
+          <h2 class="about-author__title">Об авторе</h2>
+          <p class="about-author__info">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.
+             Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__supersite">© 2019  Supersite</div>
+      <nav class="footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">О проекте</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="link">
+        <a href="">
+          <img src="./images/github.svg" alt="" class="link__github">
+        </a>
+        <a href="">
+          <img src="./images/facebook.svg" alt="" class="link__facebook">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

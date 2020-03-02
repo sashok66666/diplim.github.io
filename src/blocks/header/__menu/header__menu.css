@@ -1,0 +1,6 @@
+@import url(../../menu/menu.css);
+.header__menu {
+    justify-self: end;
+    display: grid;
+    
+}

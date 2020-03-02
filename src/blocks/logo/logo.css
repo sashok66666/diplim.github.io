@@ -1,0 +1,5 @@
+@import url(./__link/logo__link.css);
+.logo {
+    justify-self: start;
+    align-self: center;
+}

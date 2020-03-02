@@ -1,0 +1,9 @@
+@import url(./__title/about-author__title.css);
+@import url(./__text/about-author__text.css);
+@import url(./__info/about-author__info.css);
+@import url(./__img/about-author__img.css);
+.about-author {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+}
