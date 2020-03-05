@@ -3,6 +3,7 @@
 .navigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
     padding: 0 0;
     margin: 0 0;
     align-content: end;

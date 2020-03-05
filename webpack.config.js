@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
-// добавили плагин
+
 module.exports = {
   entry: { main: './src/js/index.js' },
   output: {
@@ -26,13 +26,13 @@ module.exports = {
         use:  [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'] 
       },
       {
-        test: /\.(png|jpg|gif|ico|svg)$/,
+        test: /\.(svg|jpg|png|ico|gif)$/,
         use: [
-                'file-loader?name=./images/[name].[ext]', 
+                'file-loader?name=./images/[name].[ext]',
                 {
                         loader: 'image-webpack-loader',
                         options: {
-                            bypassOnDebug: true, // webpack@1.x
+                            bypassOnDebug: true, 
                             disable: true, 
                         }
                 },

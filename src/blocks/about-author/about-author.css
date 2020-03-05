@@ -4,6 +4,8 @@
 @import url(./__img/about-author__img.css);
 .about-author {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 33vw 2fr;
+    grid-template-rows: minmax(33vw, 1fr);
+    grid-column-gap: 56px;
     padding: 100px;
 }
