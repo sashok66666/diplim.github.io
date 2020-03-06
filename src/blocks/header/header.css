@@ -1,7 +1,5 @@
 @import url(../header/__top/header__top.css);
 @import url(../header/__info/header__info.css);
 @import url(./__line/header__line.css);
-.header {
-    background: url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash-min.png") no-repeat;
-    background-size: cover;
-}
+@import url(./_background/header_background.css);
+@import url(../client/client.css);

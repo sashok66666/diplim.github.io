@@ -1,6 +1,7 @@
 @import url(./__item/menu__item.css);
-@import url(./__item/_active/menu__item_active.css);
 @import url(./__link/menu__link.css);
+@import url(./__item/_about/menu__item_about.css);
+@import url(./__item/_main/menu__item_main.css);
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;

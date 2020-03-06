@@ -12,6 +12,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
   module: {
     rules: [
       {
@@ -59,8 +64,13 @@ module.exports = {
       }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/main.html',
+      template: './src/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/about.html',
+      filename: 'about.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

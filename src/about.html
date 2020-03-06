@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Дипломная работа"> 
+  <meta name="author" content="Александр Караваев">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__top">
+        <div class="logo">
+          <a class="logo__link logo__link_about" href="#">NewAnalyzer</a>
+        </div>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link menu__link_about">Главная</a>
+            </li>
+            <li class="menu__item menu__item_about">
+              <a href="about.html" class="menu__link menu__link_about">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__line"></div>
+      <div class="client">
+          <h2 class="client__title">Клиентам</h2>
+          <div class="client__info">
+            <p class="client__text">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.</p>
+            <p class="client__text"> Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+            <p class="client__text">Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+            <p class="client__text">При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.</p>
+            <p class="client__text">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+          </div>
+      </div>
+    </header>
+    <section class="main-content">
+      
+      
+    
+    </section>
+    <section class="about-author">
+      <div class="about-author__img"></div>
+      <div class="about-author__text">
+        <h2 class="about-author__title">Об авторе</h2>
+        <p class="about-author__info">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.
+             Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__supersite">© 2019  Supersite</div>
+      <nav class="footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">О проекте</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="link">
+        <a href="">
+          <img src="./images/github.svg" alt="" class="link__github">
+        </a>
+        <a href="">
+          <img src="./images/facebook.svg" alt="" class="link__facebook">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

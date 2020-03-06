@@ -1,0 +1,7 @@
+@import url(./__text/client__text.css);
+@import Url(./__title/client__title.css);
+@import url(./__info/client__info.css);
+.client {
+    width: 85%;
+    margin: 80px auto;
+}
