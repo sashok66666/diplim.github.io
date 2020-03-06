@@ -2,7 +2,9 @@
 @import url(../critical-case/critical-case.css);
 @import url(../critical-case/_disable/critical-case_disable.css);
 @import url(../card-list/card-list.css);
-.card-list {
-    position: relative;
+@import url(./__button/main-content__button.css);
+@import url(../search-results/search-results.css);
+.main-content {
+    display: grid;
     background: #F5F6F7;
 }

@@ -1,8 +1,10 @@
 @import url(../card/card.css);
 .card-list {
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    padding: 60px 100px 60px 100px;
+    width: 85%;
+    padding: 60px 0 60px 0;
 }

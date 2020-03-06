@@ -1,0 +1,8 @@
+@import url(./__analytics/search-results__analytics.css);
+@import url(./__title/search-results__title.css);
+.search-results {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
