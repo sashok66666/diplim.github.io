@@ -4,6 +4,7 @@
 @import url(../card-list/card-list.css);
 @import url(./__button/main-content__button.css);
 @import url(../search-results/search-results.css);
+@import url(../technologies/technologies.css);
 .main-content {
     display: grid;
     background: #F5F6F7;
