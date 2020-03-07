@@ -9,5 +9,19 @@
     margin: 0 auto;
     padding-top: 30px;
     justify-items: center;
-    align-content: stretch;
+    
+}
+@media (max-width: 768px) {
+    .menu{
+        padding: 0;
+        padding-top: 20px;
+        grid-column-gap: 20px;
+    } 
+}
+@media (max-width: 375px) {
+    .menu{
+        padding: 0;
+        padding-top: 16px;
+        grid-column-gap: 11px;
+    } 
 }

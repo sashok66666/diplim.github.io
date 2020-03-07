@@ -8,3 +8,9 @@
     margin: 0 0;
     align-content: end;
 }
+@media (max-width:375px) {
+    .navigation {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}

@@ -1,5 +1,6 @@
 .search-results__analytics {
     justify-self: end;
+    align-self: center;
     text-decoration: none;
     color: #1A1B22;
     font-family: Roboto;
@@ -9,4 +10,9 @@
     line-height: 24px;
     align-items: center;
     text-align: center;
+}
+@media (max-width: 375px) {
+    .search-results__analytics {
+        justify-self: start;
+    }
 }

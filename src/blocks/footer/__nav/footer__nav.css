@@ -1,0 +1,5 @@
+@media (max-width:375px) {
+    .footer__nav {
+       grid-column: 1 / 2; 
+    }
+}

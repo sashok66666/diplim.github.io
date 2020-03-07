@@ -3,3 +3,8 @@
     width: 1fr;
     height: 272px;
 }
+@media (max-width: 768px) {
+    .card__img {
+        height: 150px;
+    }
+}

@@ -7,3 +7,8 @@
     line-height: 22px;
     color: #B6BCBF;
 }
+@media (max-width:375px) {
+    .footer__supersite {
+        grid-row: 2 / 3;
+    }
+}

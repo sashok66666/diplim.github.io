@@ -5,15 +5,21 @@
 @import url(./__time/commit__time.css);
 .commit {
     display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-columns: 1fr 4fr 4fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
-    "time time"
-    "img name"
-    "img email"
-    "text text";
-    background: #FFFFFF;
+    "time time time"
+    "img name name"
+    "img email email"
+    "text text text";
+    background: #ffffff;
     border-radius: 16px;
     padding: 24px;
-    padding-bottom: 60px;
+    height: 288px;
+}
+@media (max-width:768px) {
+    .commit {
+        height: 242px;
+        padding: 16px;
+    }
 }

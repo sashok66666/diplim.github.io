@@ -7,3 +7,13 @@
     width: 85%;
     padding: 60px 0 60px 0;
 }
+@media (max-width: 768px) {
+    .card-list {
+        width: 90%;
+    }
+}
+@media (max-width: 375px) {
+    .card-list {
+        grid-template-columns: 1fr;
+    }
+}

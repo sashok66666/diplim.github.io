@@ -2,3 +2,8 @@
     width: 85%;
     margin: auto;
 }
+@media (max-width:768px) {
+    .header__analytics {
+        width: 90%;
+    }
+}

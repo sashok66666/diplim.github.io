@@ -2,3 +2,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+@media (max-width:768px) {
+    .technologies__block {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width:375px) {
+    .technologies__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}

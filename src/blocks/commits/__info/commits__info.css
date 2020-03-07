@@ -3,3 +3,13 @@
     grid-template-columns: 1fr 1fr;
     padding-bottom: 60px;
 }
+@media (max-width:768px) {
+    .commits__info{
+        padding-bottom: 30px;
+    }  
+}
+@media (max-width:375px) {
+    .commits__info{
+        grid-template-columns: 1fr;
+    }  
+}
