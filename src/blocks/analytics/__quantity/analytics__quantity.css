@@ -1,0 +1,13 @@
+.analytics__quantity {
+    display: grid;
+    align-items: center;
+    height: 24px;
+    background: #2F71E5;
+    padding-left: 6px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}

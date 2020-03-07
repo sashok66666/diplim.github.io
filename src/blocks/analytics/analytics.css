@@ -1,0 +1,13 @@
+@import url(./__block/analytics__block.css);
+@import url(./__text/analytics__text.css);
+@import url(./__title/analytics__title.css);
+@import url(./__day/analytics__day.css);
+@import url(./__numder/analytics__number.css);
+@import url(./__quantity/analytics__quantity.css);
+@import url(./__days/analytics__days.css);
+@import url(./__scale/analytics__scale.css);
+@import url(./__text/_number/analytics__text_number.css);
+.analytics {
+    width: 85%;
+    margin: 80px auto;
+}

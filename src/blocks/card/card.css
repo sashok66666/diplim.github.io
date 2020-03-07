@@ -1,5 +1,9 @@
 @import url(./__img/card__img.css);
+@import url(./__info/card__info.css);
+@import url(./__sourse/card__sourse.css);
 @import url(./__text/card__text.css);
+@import url(./__time/card__time.css);
+@import url(./__title/card__title.css);
 .card {
     display: grid;
     background-color: white;

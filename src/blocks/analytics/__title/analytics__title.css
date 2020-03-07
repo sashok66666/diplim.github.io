@@ -1,6 +1,4 @@
-.commit__name {
-    grid-area: name;
-    margin: 0;
+.analytics__title {
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: normal;

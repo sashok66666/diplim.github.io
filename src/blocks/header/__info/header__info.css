@@ -1,6 +1,3 @@
-@import url(../__title/header__title.css);
-@import url(../__description/header__description.css);
-@import url(../__form/header__form.css);
 .header__info {
     display: grid;
     width: 40%;

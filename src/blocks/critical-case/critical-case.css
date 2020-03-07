@@ -1,6 +1,7 @@
 @import url(./__img/critical-case__img.css);
 @import url(./__result/critical-case__result.css);
 @import url(./__text/critical-case__text.css);
+@import url(./_disable/critical-case_disable.css);
 .critical-case {
     display: grid;
     background: #F5F6F7;
