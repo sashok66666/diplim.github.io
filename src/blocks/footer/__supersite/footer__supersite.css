@@ -7,7 +7,7 @@
     line-height: 22px;
     color: #B6BCBF;
 }
-@media (max-width:375px) {
+@media all and (min-device-width : 320px) and (max-device-width : 575px) {
     .footer__supersite {
         grid-row: 2 / 3;
     }

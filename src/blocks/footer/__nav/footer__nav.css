@@ -1,4 +1,7 @@
-@media (max-width:375px) {
+.footer__nav {
+    display: grid;
+}
+@media all and (min-device-width : 320px) and (max-device-width : 575px) {
     .footer__nav {
        grid-column: 1 / 2; 
     }

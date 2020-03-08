@@ -14,12 +14,11 @@
     .about-author {
         width: 90%;
         grid-column-gap: 36px;
-        grid-template-columns: 33vw 2fr;
-        grid-template-rows: 33vw;
+        grid-template-rows: 1fr;
         margin: 40px auto;
     }
 }
-@media (max-width:375px) {
+@media all and (min-device-width : 320px) and (max-device-width : 575px) {
     .about-author {
         grid-template-columns: 90vw;
         grid-template-rows: 90vw 1fr;
