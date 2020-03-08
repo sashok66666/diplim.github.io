@@ -1,5 +1,10 @@
 .about-author__img {
-    background: url(../../../images/fFHyTP5HeBQ\ \(1\).jpg) no-repeat;
-    background-size: cover;
-    border-radius: 50%;
+    background: url(../../../images/image-05.png) no-repeat;
+    background-size: contain;
+}
+@media (max-width:768px) {
+    .about-author__img {
+        width: 100%;
+        height: auto;
+    }
 }

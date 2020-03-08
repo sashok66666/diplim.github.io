@@ -9,7 +9,7 @@
      display: grid;
      grid-template-columns: 1fr 2fr;
  }
- @media (max-width:768px) {
+ @media all and (max-width:768px) {
      .technologies {
          width: 90%;
          grid-template-columns: 1fr;

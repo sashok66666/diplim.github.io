@@ -6,12 +6,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
     .search-results {
         width: 90%;
     }
 }
-@media (max-width: 375px) {
+@media all and (min-width: 320px) and (max-width: 575px) {
     .search-results {
         grid-template-columns: 1fr;
         grid-row-gap: 16px;
