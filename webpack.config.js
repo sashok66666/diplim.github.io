@@ -72,12 +72,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/analytics/analytics.html',
-      filename: '/analytics/analytics.html'
+      filename: 'analytics.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/about/about.html',
-      filename: '/about/about.html'
+      filename: 'about.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

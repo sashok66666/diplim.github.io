@@ -3,15 +3,15 @@ import value from '../utils/submit'
 import render from '../components/NewsCardList';
 
 class NewsApi {
-    constructor(dates,newSapi,render) {
+    constructor(dates,newSapi) {
       this.dates = dates;
       this.newSapi = newSapi;
       
     }
     getNews() {
-      
+      console.log(dates)
       const newSapi = this.newSapi();
-      fetch(`${newSapi.baseUrl + newSapi.language +'&'+ newSapi.pageSize+'&q='+ newSapi.value +'&from7-03-2020'+'&to14-03-2020'+'&'+ newSapi.apiKey}`)
+      fetch(`${newSapi.baseUrl + newSapi.language +'&'+ newSapi.pageSize+'&q='+ newSapi.value +'&from='+dates.weekAgo+'&to='+dates.toDay+'&sortBy=popularity'+'&'+ newSapi.apiKey}`)
         
       .then(res => {
           if (res.ok){
