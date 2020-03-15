@@ -1,0 +1,21 @@
+@import url(./__supersite/footer__supersite.css);
+@import url(./__nav/footer__nav.css);
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 85%;
+    margin: 20px auto;
+    align-items: center;
+}
+@media all and (max-width:768px) {
+    .footer {
+        width: 90%;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
+@media all and (min-device-width : 320px) and (max-device-width : 575px) {
+    .footer {
+        grid-template-columns: 2fr 1fr;
+        grid-row-gap: 40px;
+    }
+}

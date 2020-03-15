@@ -1,0 +1,27 @@
+@import url(./__title/about-author__title.css);
+@import url(./__text/about-author__text.css);
+@import url(./__info/about-author__info.css);
+@import url(./__img/about-author__img.css);
+.about-author {
+    display: grid;
+    grid-template-columns: 33vw 2fr;
+    grid-template-rows: minmax(33vw, 1fr);
+    grid-column-gap: 56px;
+    width: 85%;
+    margin: 100px auto;
+}
+@media (max-width:768px) {
+    .about-author {
+        width: 90%;
+        grid-column-gap: 36px;
+        grid-template-rows: 1fr;
+        margin: 40px auto;
+    }
+}
+@media all and (min-device-width : 320px) and (max-device-width : 575px) {
+    .about-author {
+        grid-template-columns: 90vw;
+        grid-template-rows: 90vw 1fr;
+        margin: 20px auto;
+    }
+}

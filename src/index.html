@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Дипломная работа"> 
+  <meta name="author" content="Александр Караваев">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header header_background">
+      <div class="header__top">
+        <div class="logo">
+          <a class="logo__link logo__link_main" href="#">NewAnalyzer</a>
+        </div>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item menu__item_main">
+              <a href="main.html" class="menu__link menu__link_main">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="about/about.html" class="menu__link menu__link_main">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__line"></div>
+      <div class="header__info">
+        <h1 class="header__title">Что в мире творится?</h1>
+        <p class="header__description">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+        <form  class="header__form">
+          <input type="text" class="header__input" placeholder="Введите тему новости" required>
+          <button type="submit" class="header__button">Искать</button>
+        </form>
+      </div>
+    </header>
+    <section class="main">
+      <div class="critical-case preloader critical-case_disable">
+        <i class="circle-preloader"></i>
+        <p class="critical-case__text">Идет поиск новостей...</p>
+      </div>
+      <div class="critical-case nothing-found critical-case_disable">
+        <img src="./images/nothing-found.svg" alt="Ничего не найдено" class="critical-case__img">
+        <h2 class="critical-case__result">Ничего не найдено</h2>
+        <p class="critical-case__text">К сожалению по вашему запросу 
+            ничего не найдено.</p>
+      </div>
+      <div class="search-results search-result_disable">
+        <h2 class="search-results__title">Результаты поиска</h2>
+        <a href="analytics/index.html" class="search-results__analytics">Посмотреть аналитику ></a>
+      </div>
+      <div class="card-list">
+        
+      </div>
+      <button type="button" class="main__button main__button_disable">Показать ещё</button>
+    </section>
+    <section class="about-author">
+      <div class="about-author__img"></div>
+      <div class="about-author__text">
+        <h2 class="about-author__title">Об авторе</h2>
+        <p class="about-author__info">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
+        <p class="about-author__info">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+          Если хотите, оставьте свои контакты: email и телефон. Так заказчики смогут с вами связаться.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__supersite">© 2019  Supersite</div>
+      <nav class="footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">О проекте</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="link">
+        <a href="">
+          <img src="./images/github.svg" alt="facebook" class="link__github">
+        </a>
+        <a href="">
+          <img src="./images/facebook.svg" alt="github" class="link__facebook">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

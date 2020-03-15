@@ -1,0 +1,14 @@
+.footer__supersite {
+    align-self: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+}
+@media all and (min-device-width : 320px) and (max-device-width : 575px) {
+    .footer__supersite {
+        grid-row: 2 / 3;
+    }
+}

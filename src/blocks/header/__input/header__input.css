@@ -1,0 +1,24 @@
+.header__input {
+    height: 64px;
+    border-radius: 100px 0 0 100px;
+    margin-right: -50px;
+    padding-left: 24px;
+    border: 0px solid ;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+@media (max-width: 768px) {
+    .header__input {
+        height: 56px;
+    }
+}
+@media (max-width:375px) {
+    .header__input {
+        margin: 0;
+        border-radius: 100px;
+        height: 56px;
+    }
+}

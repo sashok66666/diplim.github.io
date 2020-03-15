@@ -1,0 +1,4 @@
+.analytics__days {
+    display: grid;
+    grid-row-gap: 50px;
+}

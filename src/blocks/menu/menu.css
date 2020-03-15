@@ -1,0 +1,27 @@
+@import url(./__item/menu__item.css);
+@import url(./__link/menu__link.css);
+@import url(./__item/_about/menu__item_about.css);
+@import url(./__item/_main/menu__item_main.css);
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 34px;
+    margin: 0 auto;
+    padding-top: 30px;
+    justify-items: center;
+    
+}
+@media (max-width: 768px) {
+    .menu{
+        padding: 0;
+        padding-top: 20px;
+        grid-column-gap: 20px;
+    } 
+}
+@media all and (min-width: 320px) and (max-width: 575px) {
+    .menu{
+        padding: 0;
+        padding-top: 16px;
+        grid-column-gap: 11px;
+    } 
+}

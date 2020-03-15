@@ -1,0 +1,13 @@
+@import url(./_disable/commits__link_disable.css);
+@import url(./_enable/commits__link_enable.css);
+.commits__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: right;
+    color: #1A1B22;
+    text-decoration: none;
+}

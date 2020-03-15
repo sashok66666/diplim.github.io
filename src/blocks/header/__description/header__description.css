@@ -1,0 +1,13 @@
+.header__description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+@media (max-width:375px) {
+    .header__description {
+        margin: 56px 0 20px;
+    }
+}

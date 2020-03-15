@@ -1,0 +1,7 @@
+@import url(./__link/logo__link.css);
+@import url(./__link/_main/logo__link_main.css);
+@import url(./__link/_about/logo__link_about.css);
+.logo {
+    justify-self: start;
+    align-self: center;
+}

@@ -1,0 +1,18 @@
+@import url(./__block/technologies__block.css);
+@import url(./__img/technologies__img.css);
+@import url(./__name/technologies__name.css);
+@import url(./__title/technologies__title.css);
+@import url(./__used/technologies__used.css);
+ .technologies {
+     width: 85%;
+     margin: 80px auto;
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+ }
+ @media all and (max-width:768px) {
+     .technologies {
+         width: 90%;
+         grid-template-columns: 1fr;
+         margin: 40px auto;
+     }
+ }

@@ -1,0 +1,14 @@
+.header__top {
+    width: 85%;
+    margin: auto;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+    .header__top{
+        width: 90%;
+        height: 60px;
+    } 
+}
+

@@ -1,0 +1,5 @@
+@import url(./_hover/menu__item_hover.css);
+.menu__item {
+    list-style-type: none;
+    opacity: 0.5;
+}

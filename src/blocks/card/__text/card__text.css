@@ -1,0 +1,8 @@
+.card__text {
+    padding: 0 24px;
+}
+@media (max-width:768px) {
+    .card__text {
+        padding: 0 16px;
+    }
+}
