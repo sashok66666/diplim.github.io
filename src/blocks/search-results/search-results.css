@@ -1,10 +1,12 @@
 @import url(./__analytics/search-results__analytics.css);
 @import url(./__title/search-results__title.css);
+
 .search-results {
     width: 85%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 80px auto 80px;
 }
 @media all and (max-width: 768px) {
     .search-results {
@@ -15,6 +17,8 @@
     .search-results {
         grid-template-columns: 1fr;
         grid-row-gap: 16px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 

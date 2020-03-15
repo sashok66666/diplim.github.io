@@ -8,6 +8,7 @@
 @import url(../blocks/critical-case/critical-case.css);
 @import url(../blocks/critical-case/_disable/critical-case_disable.css);
 @import url(../blocks/search-results/search-results.css);
+@import url(../blocks/search-results/_disable/search-result_disable.css);
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/footer/footer.css);
@@ -23,3 +24,4 @@
 @import url(../blocks/container/container.css);
 @import url(../../node_modules/@glidejs/glide/dist/css/glide.core.css);
 @import url(../../node_modules/@glidejs/glide/dist/css/glide.theme.css);
+
