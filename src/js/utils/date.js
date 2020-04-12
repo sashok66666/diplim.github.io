@@ -1,9 +1,9 @@
-function dtime_nums() {
+function dtimeNums() {
     const dates = {};
     const now = new Date;
-    let toDay = now.toISOString();
+    const toDay = now.toISOString();
     now.setDate(now.getDate() - 7);
-    let weekAgo = now.toISOString();
+    const weekAgo = now.toISOString();
 
     const reg = /(\d+)-(\d+)-(\d+)/;
     
@@ -12,7 +12,7 @@ function dtime_nums() {
     dates.weekAgo = weekAgo.match(reg)[0];
     return dates ;
   }
-  const dates = dtime_nums();
+  const dates = dtimeNums();
 
 
   export default dates;

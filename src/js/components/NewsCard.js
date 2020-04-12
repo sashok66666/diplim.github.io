@@ -15,14 +15,14 @@ class NewsCard {
     const date = this.date.bind(this);
     const card = document.createElement("div");
     card.classList.add("card");
-    card.innerHTML = `
+    card.insertAdjacentHTML("afterBegin" ,`
         <div  class="card__img"></div>
         <div class="card__text">
             <p class="card__time"></p>
             <h2 class="card__title"></h2>
             <p class="card__info"></p>
             <p class="card__sourse"></p>
-        </div>`;
+        </div>`);
     card.querySelector(".card__img").style.backgroundImage = `url(${array.urlToImage})`;  
     card.querySelector(".card__time").textContent = date(array.publishedAt);
     card.querySelector(".card__title").textContent = array.title;

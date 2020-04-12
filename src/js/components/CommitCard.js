@@ -18,7 +18,7 @@ class CommitCard {
       const date = this.date.bind(this);
       const card = document.createElement("li");
       card.classList.add("glide__slide");
-      card.innerHTML = `
+      card.insertAdjacentHTML("afterBegin",`
       <div class="commit">
             <p class="commit__time"></p>
             <div class="commit__info">
@@ -29,7 +29,7 @@ class CommitCard {
                 </div>
             </div>
             <p class="commit__text"></p>
-      </div>`;
+      </div>`);
       card.querySelector(".commit__time").textContent = date(array.commit.committer.date);  
       
       

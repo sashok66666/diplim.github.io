@@ -7,9 +7,9 @@ class CommitCardList {
         this.container = container;
         this.createCard = createCard;
     }
-    render(arr) {
+    render(commits) {
       const addCard = this.addCard.bind(this);
-      arr.forEach(function(item,i,arr){
+      commits.forEach(function(item,i,arr){
            return addCard(item);
       })
     }
