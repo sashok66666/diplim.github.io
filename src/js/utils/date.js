@@ -6,7 +6,7 @@ function dtime_nums() {
     let weekAgo = now.toISOString();
 
     const reg = /(\d+)-(\d+)-(\d+)/;
-    console.log() ;
+    
 
     dates.toDay = toDay.match(reg)[0];
     dates.weekAgo = weekAgo.match(reg)[0];

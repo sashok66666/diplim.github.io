@@ -1,18 +1,16 @@
 import CommitCard from "./CommitCard";
 
 const createCommitCard = (array) => new CommitCard(array);
+
 class CommitCardList {
     constructor(container, createCard) {
         this.container = container;
         this.createCard = createCard;
     }
-    render() {
+    render(arr) {
       const addCard = this.addCard.bind(this);
-      let arrayNews = JSON.parse(localStorage.commits);
-      arrayNews.forEach(function(item,i,arr){
-       
-          addCard(item);
-
+      arr.forEach(function(item,i,arr){
+           return addCard(item);
       })
     }
     
@@ -22,10 +20,9 @@ class CommitCardList {
     }
   }
   const commitCardList = new CommitCardList(document.querySelector('.glide__slides'),createCommitCard);
-  const render = commitCardList.render.bind(commitCardList);
 
-    
-    export default render ;
+
+  export default commitCardList ;
   
   
   

@@ -28,9 +28,9 @@ class CommitCard {
                     <p class="commit__email"></p>
                 </div>
             </div>
-            <p class="commit__text"</p>
+            <p class="commit__text"></p>
       </div>`;
-      card.querySelector(".commit__time").textContent = date(array.commit.committer.date );  
+      card.querySelector(".commit__time").textContent = date(array.commit.committer.date);  
       
       
      // card.querySelector(".commit__img").setAttribute('src',array.author.avatar_url);

@@ -1,14 +1,15 @@
-import render from "../components/CommitCardList"
+import commitCardList from "../components/CommitCardList";
+import glide from "../utils/glide";
+const renderCommitsCard =  (arr) => commitCardList.render(arr);
+const glideActive = () => glide.mount();
 class GithubApi {
-    constructor() {
-     
-      
+    constructor(render,glide) {
+     this.render = render;
+     this.glide = glide;
+     console.log(this.glide)
     }
     getCommits() {
-      
-     
       fetch('https://api.github.com/repos/sashok66666/diplim.github.io/commits')
-        
       .then(res => {
           if (res.ok){
             return res.json() ;
@@ -16,14 +17,21 @@ class GithubApi {
           return Promise.reject(`Ошибка: ${res.status}`);
         })
         .then((result) => {
-            localStorage.setItem('commits',JSON.stringify(result))
+           this.render(result)
+           setTimeout(this.glide,500)  
         })
+        
+     
         .catch((err) => {
           console.log(err);
         });
     }
 }
 
-const githubApi = new GithubApi
-githubApi.getCommits();
-export default GithubApi;
+const githubApi = new GithubApi(renderCommitsCard,glideActive);
+
+export default githubApi;
+
+
+
+  
