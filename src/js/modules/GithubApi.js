@@ -18,7 +18,8 @@ class GithubApi {
         })
         .then((result) => {
            this.render(result)
-           setTimeout(this.glide,500)  
+           return Promise.resolve(this.glide())
+             
         })
         
      

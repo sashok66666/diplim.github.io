@@ -9,7 +9,6 @@ class NewsApi {
       
     }
     getNews() {
-      console.log(dates)
       const newSapi = this.newSapi();
       fetch(`${newSapi.baseUrl + newSapi.language +'&'+ newSapi.pageSize+'&q='+ newSapi.value +'&from='+dates.weekAgo+'&to='+dates.toDay+'&sortBy=popularity'+'&'+ newSapi.apiKey}`)
         
@@ -20,7 +19,7 @@ class NewsApi {
           return Promise.reject(`Ошибка: ${res.status}`);
         })
         .then((result) => {
-          localStorage.setItem('news',JSON.stringify(result.articles))
+          return Promise.resolve(localStorage.setItem('news',JSON.stringify(result.articles)))
         })
         .catch((err) => {
           console.log(err);

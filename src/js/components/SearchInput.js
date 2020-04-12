@@ -12,12 +12,14 @@ class SearchInput {
         this.resetCards = resetCards;
     }
     submission(){
+       
         localStorage.removeItem('news')
         this.resetCards();
         this.getNews();
         this.preloader();
         setTimeout(this.render,2000);
         setTimeout(this.searchResult,2000);
+
     }
 }
 
