@@ -14,7 +14,11 @@ class NewsApi {
             return res.json() ;
           }
           return Promise.reject(`Ошибка: ${res.status}`);
-        });
+        })
+        .then((res)=>{
+          localStorage.setItem('value', newSapi.value);
+          return res
+        })
     }
 }
 

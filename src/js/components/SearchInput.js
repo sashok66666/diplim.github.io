@@ -21,6 +21,8 @@ class SearchInput {
         this.preloader();
         this.newsApi.getNews()
             .then((data) =>{
+                console.log(data)
+               // localStorage.setItem('value', newSapi);
                 localStorage.setItem('totalResults',JSON.stringify(data.totalResults))
                 localStorage.setItem('news',JSON.stringify(data.articles))
                 this.render();
