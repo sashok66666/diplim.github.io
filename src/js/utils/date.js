@@ -2,7 +2,7 @@ function dtimeNums() {
     const dates = {};
     const now = new Date;
     const toDay = now.toISOString();
-    now.setDate(now.getDate() - 7);
+    now.setDate(now.getDate() - 6);
     const weekAgo = now.toISOString();
 
     const reg = /(\d+)-(\d+)-(\d+)/;
