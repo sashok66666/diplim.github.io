@@ -80,7 +80,7 @@ class Statistics {
     }
 }
 
-const statistics = new Statistics(localStorage.value)
+const statistics = new Statistics(localStorage.getItem('value'))
 statistics.ask()
 statistics.array()
 
