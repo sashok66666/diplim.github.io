@@ -4,9 +4,13 @@ class Statistics {
     }
     ask(){
         const value = this.value
-        console.log(value);
+        const totalResults = JSON.parse(localStorage.getItem('totalResults'))
+        const mentions = JSON.parse(localStorage.getItem('news')).length
         document.querySelector('.header__result').textContent = 'Вы спросили: '+ `${value}`; 
+        document.querySelector('.requests').textContent = totalResults; 
+        document.querySelector('.mentions').textContent = mentions; 
     }
+
     array(){
         const arrayNews = JSON.parse(localStorage.getItem('news'))
         new Promise((resolve,reject)=>{
