@@ -1,33 +1,47 @@
-import getNews from "../modules/NewsApi";
+import NewsApi from "../modules/NewsApi";
 import render from "./NewsCardList";
-import searchResult from "../utils/search-result";
 import preloader from "../utils/preloader";
 import resetCards from "../utils/resetCards";
+import value from '../utils/submit';
+import searchError from '../utils/searchError';
+import dates from '../utils/date';
+
+const newsApi = new NewsApi(dates,value);
+
 class SearchInput {
-    constructor(getNews,render,searchResult,preloader,resetCards){
-        this.getNews = getNews;
+    constructor(newsApi,render,preloader,resetCards,searchError){
+        this.newsApi = newsApi;
         this.render = render;
-        this.searchResult = searchResult;
         this.preloader = preloader;
         this.resetCards = resetCards;
+        this.searchError = searchError;
     }
     submission(){
-       
-        localStorage.removeItem('news')
         this.resetCards();
-        this.getNews();
         this.preloader();
-        setTimeout(this.render,2000);
-        setTimeout(this.searchResult,2000);
-
+        this.newsApi.getNews()
+            .then((data) =>{
+                localStorage.setItem('news',JSON.stringify(data.articles))
+                this.render();
+                this.preloader();
+            })
+            .then(()=>{
+                this.searchError()
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     }
 }
 
-const searchInput = new SearchInput(getNews,render,searchResult,preloader,resetCards);
+const searchInput = new SearchInput(newsApi,render,preloader,resetCards,searchError);
+
 document.querySelector('.header__form').addEventListener('submit',function(event){
     event.preventDefault();
     searchInput.submission()
-    
 })
+document.querySelector('.main__button').addEventListener('click',function(){
+    render();
+  })
 
 export default SearchInput
