@@ -8,7 +8,7 @@ class NewsCardList {
     }
     render() {
       const addCard = this.addCard.bind(this);
-      const arrayNews = JSON.parse(localStorage.getItem('news'));
+      let arrayNews = JSON.parse(localStorage.news);
       arrayNews.forEach(function(item,i,arr){
         if (i<3) {
           addCard(item);
