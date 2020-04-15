@@ -3,12 +3,15 @@
 @import url(./__name/commit__name.css);
 @import url(./__text/commit__text.css);
 @import url(./__time/commit__time.css);
-@import url(./__data/commit__data.css);
-@import url(./__info/commit__info.css);
 .commit {
-    
-    
-    
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "time time time"
+    "img name name"
+    "img email email"
+    "text text text";
     background: #ffffff;
     border-radius: 16px;
     padding: 24px;
