@@ -22,6 +22,6 @@
 @import url(../blocks/commits/commits.css);
 @import url(../blocks/analytics/analytics.css);
 @import url(../blocks/container/container.css);
-@import url(../../node_modules/@glidejs/glide/dist/css/glide.core.css);
-@import url(../../node_modules/@glidejs/glide/dist/css/glide.theme.css);
+@import url(../../node_modules/@glidejs/glide/dist/css/glide.core.min.css);
+@import url(../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css);
 

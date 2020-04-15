@@ -11,8 +11,10 @@ import "./images/webpack.svg";
 import "./images/image-01.png";
 import "./images/image-03.png";
 import "./images/image-04.png";
-
 import "./js/components/SearchInput"
+
+
+
 
 
 
